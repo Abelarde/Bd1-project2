@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F17A35E-0FE6-E3C8-ACC4-08E8B15B2FF0" name="Ciudad">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>E7535FFF-E60E-2121-EBD5-C3FB0FC29952</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCiudad" id="DD0E04FD-72A0-EB66-E25F-211C6D0EF5ED">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>EB476696-2823-21F9-53AD-B3D4DE446BE2</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="9B8904C6-D560-0584-2889-CCEA79E9A481">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>5F8FBC50-043A-F7DB-63A0-2EA468AB2129</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_idRegion" id="F42E46DB-8BEC-C8CF-947E-2D695B7A95DF">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>4B5C5CE2-70E2-EF78-6D85-3FE3FC75AB50</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="318AD6B3-000E-3100-A913-25C3842BF887" referredColumn="10255C15-85D9-0140-78D3-4E6334C6CD8A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6503409-263E-0DF7-6F2F-3D36B9D22ECB" name="Ciudad_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>E26BFB63-E396-2CB6-4606-8B6D8EA523FC</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD0E04FD-72A0-EB66-E25F-211C6D0EF5ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66298E58-ECA7-919B-61A6-0DDCEF2813D2" name="Ciudad_Region_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>8D3D07AA-F7BD-5615-3CC3-E3180CB1A98C</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F42E46DB-8BEC-C8CF-947E-2D695B7A95DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CBD4F960-BF1F-5162-5960-1500616A3F37" name="Direccion">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:43 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idDireccion" id="261BC575-A506-A52F-C448-C9142DFA1074">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:49 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="D478D5BC-84A4-C91A-2985-249821EBB959">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:55 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05CCF0FB-E612-3F9C-CAB6-55FFC0BF4D2E" name="Direccion PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:54 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>261BC575-A506-A52F-C448-C9142DFA1074</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

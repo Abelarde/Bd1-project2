@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0056E43-0247-9ACE-DB2C-373A26426252" name="DetalleTransaccion">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 05:28:51 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantidad" id="FD147933-35B7-9323-44B5-8D3EEDD298A1">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 05:28:58 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProducto" id="14FDB8AB-BF92-4B68-BCCF-4324C24F7CD5">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:32:52 UTC</createdTime>
+<generatorID>2E67965E-D677-FA1B-8637-BD73BB598A69</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<referedAttribute>5CC6A934-7F39-891C-10DD-2E64BB3645D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTransaccion" id="4DDECDC5-48E8-639E-E1C5-8FFABD1A5F39">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:32:55 UTC</createdTime>
+<generatorID>F8F376F3-67F1-2CE1-CA4A-53A60B61B5F0</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<referedAttribute>920150B9-8B21-E885-B5E5-C9B0E22A4F9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

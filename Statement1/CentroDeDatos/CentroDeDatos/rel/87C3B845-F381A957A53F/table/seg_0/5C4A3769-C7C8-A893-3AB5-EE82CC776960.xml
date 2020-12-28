@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C4A3769-C7C8-A893-3AB5-EE82CC776960" name="DetalleTransaccion">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>B0056E43-0247-9ACE-DB2C-373A26426252</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cantidad" id="429F3D2F-A47D-8A17-9302-72961CCEB15B">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>FD147933-35B7-9323-44B5-8D3EEDD298A1</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Producto_idProducto" id="E990DEAF-731E-FBE4-A85F-0E11EBAB2E2A">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>14FDB8AB-BF92-4B68-BCCF-4324C24F7CD5</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A16BA66D-B82E-CEBA-F9C8-0A19C46593F7" referredColumn="4E2A2EE2-FD16-B56F-8DF1-A8B971B56FC8"/>
+</associations>
+</Column>
+<Column name="Transaccion_idTransaccion" id="2F050879-5E1A-0A25-C814-2DA14C2F4E2E">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>4DDECDC5-48E8-639E-E1C5-8FFABD1A5F39</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDDAE210-DC0D-6AD0-B2B0-F29E2D825D97" referredColumn="7F2BD9B2-563A-7D75-83E0-A7D1523F7DE9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65E158E3-370A-228C-39A6-D0AE2A6CDB41" name="DetalleTransaccion_Transaccion_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>F8F376F3-67F1-2CE1-CA4A-53A60B61B5F0</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F050879-5E1A-0A25-C814-2DA14C2F4E2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF2D6AEC-8872-6525-28B6-E8B79E03E8F5" name="DetalleTransaccion_Producto_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<generatorID>2E67965E-D677-FA1B-8637-BD73BB598A69</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E990DEAF-731E-FBE4-A85F-0E11EBAB2E2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

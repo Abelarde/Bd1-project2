@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9C0F6A57-47A7-4F62-AA61-F007806F274D" name="Transaccion">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 05:28:29 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTransaccion" id="920150B9-8B21-E885-B5E5-C9B0E22A4F9D">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 05:28:36 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idCompania" id="C00AACE9-223A-8868-AC42-B2D4485C4DC7">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:34:49 UTC</createdTime>
+<generatorID>0F29F1F0-8531-F946-7C95-9DB6C57C5C1B</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<referedAttribute>F0FF4AE0-D418-00E9-3019-B7E94F100628</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPersona" id="026EAE3F-766F-FAF7-7A1C-3F4D73352C86">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:35:01 UTC</createdTime>
+<generatorID>A6F4D5D9-81EA-6D77-10A9-80CAB0BF0719</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<referedAttribute>D24BEABB-10C9-C9BE-1F71-2627AA2801D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BA09FE9-F730-F744-B782-3E19D4463236" name="Transaccion PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 05:28:42 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>920150B9-8B21-E885-B5E5-C9B0E22A4F9D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CentroDeDatos" id="CF45F76F-0487-E13C-1E46-9B6B0CACAB28" version="3.5">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 05:06:48 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CF45F76F-0487-E13C-1E46-9B6B0CACAB28</designId>
+</OSDM_Design>

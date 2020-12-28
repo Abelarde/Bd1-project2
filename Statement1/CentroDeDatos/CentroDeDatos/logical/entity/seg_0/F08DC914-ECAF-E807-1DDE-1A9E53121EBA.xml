@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F08DC914-ECAF-E807-1DDE-1A9E53121EBA" name="CodigoPostal">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:04 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idCodigoPostal" id="BD0A4AEC-9B91-8002-6A89-A10257DB1E5A">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:13 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="9D6407AF-BFCA-780E-3761-AFB0968882FB">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:19 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idCiudad" id="13FA472E-E374-78C5-AB82-80BFB7D3EAD5">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:09:20 UTC</createdTime>
+<generatorID>7A00BC9D-59E7-7BC4-5A4B-EB87FD7C5265</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<referedAttribute>EB476696-2823-21F9-53AD-B3D4DE446BE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idDireccion" id="245A68E1-38DE-1F07-5C36-18778B29DE94">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:09:54 UTC</createdTime>
+<generatorID>DB2B07F6-BEF4-CB7B-2AFB-2ABAEED1DF2D</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<referedAttribute>261BC575-A506-A52F-C448-C9142DFA1074</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AEDE3C8A-0EB9-0587-DD3F-FF9D527527F6" name="CodigoPostal PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2020-12-28 06:08:18 UTC</createdTime>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<engineerTo>
+<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD0A4AEC-9B91-8002-6A89-A10257DB1E5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

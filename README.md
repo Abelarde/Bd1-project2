@@ -1,4 +1,5 @@
-#Project no.2 Database Course 1 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+# Project no.2 Database Course 1 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
 This project is the resolution to the statement left in class for the Data Base Systems course 1.
 
 This project consists of two statements in which the following skills are executed:

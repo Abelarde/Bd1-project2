@@ -1,129 +1,147 @@
+-- -----------------------------------------------------
+-- Schema CentroDeDatos
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `CentroDeDatos` ;
 
-CREATE TABLE categoriaproducto (
-    idcategoriaproducto  INTEGER NOT NULL,
-    nombre               VARCHAR2(255 CHAR) NOT NULL
-);
+-- -----------------------------------------------------
+-- Schema CentroDeDatos
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `CentroDeDatos` ;
+USE `CentroDeDatos` ;
 
-ALTER TABLE categoriaproducto ADD CONSTRAINT categoriaproducto_pk PRIMARY KEY ( idcategoriaproducto );
+-- -----------------------------------------------------
 
-CREATE TABLE ciudad (
-    idciudad         INTEGER NOT NULL,
-    nombre           VARCHAR2(255 CHAR) NOT NULL,
-    region_idregion  INTEGER NOT NULL
-);
+DROP TABLE IF EXISTS `CentroDeDatos`.`CategoriaProducto` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`CategoriaProducto` (
+  `idCategoriaProducto` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`idCategoriaProducto`))
+ENGINE = InnoDB;
 
-ALTER TABLE ciudad ADD CONSTRAINT ciudad_pk PRIMARY KEY ( idciudad );
+DROP TABLE IF EXISTS `CentroDeDatos`.`Region` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Region` (
+  `idRegion` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`idRegion`))
+ENGINE = InnoDB;
 
-CREATE TABLE codigopostal (
-    idcodigopostal         INTEGER NOT NULL,
-    codigo                 INTEGER NOT NULL,
-    ciudad_idciudad        INTEGER NOT NULL,
-    direccion_iddireccion  INTEGER NOT NULL
-);
+DROP TABLE IF EXISTS `CentroDeDatos`.`Ciudad` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Ciudad` (
+  `idCiudad` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  `idRegion` INT NOT NULL,
+  PRIMARY KEY (`idCiudad`),
+  CONSTRAINT `fk_Ciudad_Region`
+    FOREIGN KEY (`idRegion`)
+    REFERENCES `CentroDeDatos`.`Region` (`idRegion`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+CREATE INDEX `fk_Ciudad_Region_idx` ON `CentroDeDatos`.`Ciudad` (`idRegion` ASC) VISIBLE;
 
-CREATE UNIQUE INDEX codigopostal__idx ON
-    codigopostal (
-        direccion_iddireccion
-    ASC );
+DROP TABLE IF EXISTS `CentroDeDatos`.`Direccion` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Direccion` (
+  `idDireccion` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`idDireccion`))
+ENGINE = InnoDB;
 
-ALTER TABLE codigopostal ADD CONSTRAINT codigopostal_pk PRIMARY KEY ( idcodigopostal );
+DROP TABLE IF EXISTS `CentroDeDatos`.`CodigoPostal` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`CodigoPostal` (
+  `idCodigoPostal` INT NOT NULL AUTO_INCREMENT,
+  `nombre` INT NOT NULL,
+  `idCiudad` INT NOT NULL,
+  `idDireccion` INT NOT NULL,
+  PRIMARY KEY (`idCodigoPostal`),
+  CONSTRAINT `fk_CodigoPostal_Ciudad`
+    FOREIGN KEY (`idCiudad`)
+    REFERENCES `CentroDeDatos`.`Ciudad` (`idCiudad`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_CodigoPostal_Direccion`
+    FOREIGN KEY (`idDireccion`)
+    REFERENCES `CentroDeDatos`.`Direccion` (`idDireccion`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+CREATE INDEX `fk_CodigoPostal_Ciudad_idx` ON `CentroDeDatos`.`CodigoPostal` (`idCiudad` ASC) VISIBLE;
+CREATE INDEX `fk_CodigoPostal_Direccion_idx` ON `CentroDeDatos`.`CodigoPostal` (`idDireccion` ASC) VISIBLE;
 
-CREATE TABLE compania (
-    idcompania  INTEGER NOT NULL,
-    nombre      VARCHAR2(255 CHAR) NOT NULL,
-    contacto    VARCHAR2(255 CHAR),
-    correo      VARCHAR2(255 CHAR),
-    telefono    VARCHAR2(255 CHAR)
-);
+DROP TABLE IF EXISTS `CentroDeDatos`.`Compania` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Compania` (
+  `idCompania` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  `contacto` VARCHAR(255),
+  `correo` VARCHAR(255),
+  `telefono` VARCHAR(255),
+  PRIMARY KEY (`idCompania`))
+ENGINE = InnoDB;
 
-ALTER TABLE compania ADD CONSTRAINT compania_pk PRIMARY KEY ( idcompania );
+DROP TABLE IF EXISTS `CentroDeDatos`.`Producto` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Producto` (
+  `idProducto` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  `precio` DECIMAL(10,2) NOT NULL,
+  `idCategoriaProducto` INT NOT NULL,
+  PRIMARY KEY (`idProducto`),
+  CONSTRAINT `fk_Producto_CategoriaProducto`
+    FOREIGN KEY (`idCategoriaProducto`)
+    REFERENCES `CentroDeDatos`.`CategoriaProducto` (`idCategoriaProducto`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+    
+DROP TABLE IF EXISTS `CentroDeDatos`.`Persona` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Persona` (
+  `idPersona` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NOT NULL,
+  `correo` VARCHAR(255) NOT NULL,
+  `telefono` VARCHAR(255) NOT NULL,
+  `fechaRegistro` DATE,
+  `tipo` CHAR(1) NOT NULL,
+  `idDireccion` INT NOT NULL,
+  PRIMARY KEY (`idPersona`),
+  CONSTRAINT `fk_Persona_Direccion`
+	FOREIGN KEY (`idDireccion`)
+    REFERENCES `CentroDeDatos`.`Direccion` (`idDireccion`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+    
+DROP TABLE IF EXISTS `CentroDeDatos`.`Transaccion` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Transaccion` (
+  `idTransaccion` INT NOT NULL AUTO_INCREMENT,
+  `idCompania` INT NOT NULL,
+  `idPersona` INT NOT NULL,
+  PRIMARY KEY (`idTransaccion`),
+  CONSTRAINT `fk_Transaccion_Compania`
+	FOREIGN KEY (`idCompania`)
+    REFERENCES `CentroDeDatos`.`Compania` (`idCompania`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Transaccion_Persona`
+	FOREIGN KEY (`idPersona`)
+    REFERENCES `CentroDeDatos`.`Persona` (`idPersona`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;    
 
-CREATE TABLE detalletransaccion (
-    cantidad                   INTEGER NOT NULL,
-    producto_idproducto        INTEGER NOT NULL,
-    transaccion_idtransaccion  INTEGER NOT NULL
-);
-
-CREATE TABLE direccion (
-    iddireccion  INTEGER NOT NULL,
-    nombre       VARCHAR2(255 CHAR) NOT NULL
-);
-
-ALTER TABLE direccion ADD CONSTRAINT direccion_pk PRIMARY KEY ( iddireccion );
-
-CREATE TABLE persona (
-    idpersona              INTEGER NOT NULL,
-    nombre                 VARCHAR2(255 CHAR) NOT NULL,
-    correo                 VARCHAR2(255 CHAR),
-    telefono               VARCHAR2(255 CHAR),
-    fecharegistro          DATE,
-    tipo                   CHAR(1 CHAR) NOT NULL,
-    direccion_iddireccion  INTEGER NOT NULL
-);
-
-ALTER TABLE persona ADD CONSTRAINT persona_pk PRIMARY KEY ( idpersona );
-
-CREATE TABLE producto (
-    idproducto                             INTEGER NOT NULL,
-    nombre                                 VARCHAR2(255 CHAR) NOT NULL,
-    precio                                 NUMBER(10, 2) NOT NULL, 
---  ERROR: Column name length exceeds maximum allowed length(30) 
-         categoriaproducto_idcategoriaproducto  INTEGER NOT NULL
-);
-
-ALTER TABLE producto ADD CONSTRAINT producto_pk PRIMARY KEY ( idproducto );
-
-CREATE TABLE region (
-    idregion  INTEGER NOT NULL,
-    nombre    VARCHAR2(255 CHAR) NOT NULL
-);
-
-ALTER TABLE region ADD CONSTRAINT region_pk PRIMARY KEY ( idregion );
-
-CREATE TABLE transaccion (
-    idtransaccion        INTEGER NOT NULL,
-    compania_idcompania  INTEGER NOT NULL,
-    persona_idpersona    INTEGER NOT NULL
-);
-
-ALTER TABLE transaccion ADD CONSTRAINT transaccion_pk PRIMARY KEY ( idtransaccion );
-
-ALTER TABLE ciudad
-    ADD CONSTRAINT ciudad_region_fk FOREIGN KEY ( region_idregion )
-        REFERENCES region ( idregion );
-
-ALTER TABLE codigopostal
-    ADD CONSTRAINT codigopostal_ciudad_fk FOREIGN KEY ( ciudad_idciudad )
-        REFERENCES ciudad ( idciudad );
-
-ALTER TABLE codigopostal
-    ADD CONSTRAINT codigopostal_direccion_fk FOREIGN KEY ( direccion_iddireccion )
-        REFERENCES direccion ( iddireccion );
-
-ALTER TABLE detalletransaccion
-    ADD CONSTRAINT detalletransaccion_producto_fk FOREIGN KEY ( producto_idproducto )
-        REFERENCES producto ( idproducto );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE detalletransaccion
-    ADD CONSTRAINT detalletransaccion_transaccion_fk FOREIGN KEY ( transaccion_idtransaccion )
-        REFERENCES transaccion ( idtransaccion );
-
-ALTER TABLE persona
-    ADD CONSTRAINT persona_direccion_fk FOREIGN KEY ( direccion_iddireccion )
-        REFERENCES direccion ( iddireccion );
-
-ALTER TABLE producto
-    ADD CONSTRAINT producto_categoriaproducto_fk FOREIGN KEY ( categoriaproducto_idcategoriaproducto )
-        REFERENCES categoriaproducto ( idcategoriaproducto );
-
-ALTER TABLE transaccion
-    ADD CONSTRAINT transaccion_compania_fk FOREIGN KEY ( compania_idcompania )
-        REFERENCES compania ( idcompania );
-
-ALTER TABLE transaccion
-    ADD CONSTRAINT transaccion_persona_fk FOREIGN KEY ( persona_idpersona )
-        REFERENCES persona ( idpersona );
+DROP TABLE IF EXISTS `CentroDeDatos`.`DetalleTransaccion` ;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`DetalleTransaccion` (
+  `cantidad` INT NOT NULL,
+  `idProducto` INT NOT NULL,
+  `idTransaccion` INT NOT NULL,
+  CONSTRAINT `fk_Transaccion_Producto`
+	FOREIGN KEY (`idProducto`)
+    REFERENCES `CentroDeDatos`.`Producto` (`idProducto`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Transaccion_Transaccion`
+	FOREIGN KEY (`idTransaccion`)
+    REFERENCES `CentroDeDatos`.`Transaccion` (`idTransaccion`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB; 
 
 
 

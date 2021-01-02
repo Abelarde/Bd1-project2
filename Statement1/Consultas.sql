@@ -66,4 +66,31 @@ FROM
     LIMIT 5);
 
 
+-- ---------------------------- CONSULTA 3 -----------------------------------
+/*Mostrar el top 5 de proveedores que más productos han vendido (en dinero) de 
+la categoría de productos ‘Fresh Vegetables’.*/
+    
+SELECT * FROM DetalleTransaccion;  
+
+SELECT SUM(Comodin1.subTotal) AS Total,
+Persona.nombre
+FROM  
+	(SELECT  DetalleTransaccion.idTransaccion, SUM(DetalleTransaccion.cantidad*Producto.precio) AS subTotal
+	FROM DetalleTransaccion
+	INNER JOIN Producto
+	ON DetalleTransaccion.idProducto = Producto.idProducto
+	INNER JOIN CategoriaProducto
+	ON Producto.idCategoriaProducto = CategoriaProducto.idCategoriaProducto
+	WHERE CategoriaProducto.nombre = 'Fresh Vegetables'
+	GROUP BY DetalleTransaccion.idTransaccion) AS Comodin1 
+	INNER JOIN Transaccion 
+	ON Comodin1.idTransaccion = Transaccion.idTransaccion
+	INNER JOIN Persona_Tipo 
+	ON Transaccion.idPersona_Tipo = Persona_Tipo.idPersona_Tipo
+	INNER JOIN Persona 
+	ON Persona_Tipo.idPersona = Persona.idPersona
+    WHERE Persona_Tipo.idTipo = 2
+    GROUP BY Persona.nombre
+
+    
     

@@ -97,31 +97,56 @@ CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Persona` (
   `nombre` VARCHAR(255) NOT NULL,
   `correo` VARCHAR(255) NOT NULL,
   `telefono` VARCHAR(255) NOT NULL,
-  `fechaRegistro` DATE,
-  `tipo` CHAR(1) NOT NULL,
-  `idDireccion` INT NOT NULL,
-  PRIMARY KEY (`idPersona`),
-  CONSTRAINT `fk_Persona_Direccion`
+  PRIMARY KEY (`idPersona`))
+ENGINE = InnoDB;
+
+DROP TABLE IF EXISTS `CentroDeDatos`.`Tipo`;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Tipo`(
+	`idTipo` INT NOT NULL AUTO_INCREMENT,
+    `nombre` VARCHAR(255) NOT NULL,
+    PRIMARY KEY(`idTipo`))
+ENGINE = InnoDB;
+
+DROP TABLE IF EXISTS `CentroDeDatos`.`Persona_Tipo`;
+CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Persona_Tipo`(
+	`idPersona_Tipo` INT NOT NULL AUTO_INCREMENT,
+    `fechaRegistro` DATE,
+    `idDireccion` INT NOT NULL,
+    `idTipo` INT NOT NULL,
+    `idPersona` INT NOT NULL,
+    PRIMARY KEY(`idPersona_Tipo`),
+  CONSTRAINT `fk_Persona_Tipo_Direccion`
 	FOREIGN KEY (`idDireccion`)
     REFERENCES `CentroDeDatos`.`Direccion` (`idDireccion`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Persona_Tipo_Tipo`
+	FOREIGN KEY (`idTipo`)
+    REFERENCES `CentroDeDatos`.`Tipo` (`idTipo`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Persona_Tipo_Persona`
+	FOREIGN KEY (`idPersona`)
+    REFERENCES `CentroDeDatos`.`Persona` (`idPersona`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION       
+)
 ENGINE = InnoDB;
     
 DROP TABLE IF EXISTS `CentroDeDatos`.`Transaccion` ;
 CREATE TABLE IF NOT EXISTS `CentroDeDatos`.`Transaccion` (
   `idTransaccion` INT NOT NULL AUTO_INCREMENT,
   `idCompania` INT NOT NULL,
-  `idPersona` INT NOT NULL,
+  `idPersona_Tipo` INT NOT NULL,
   PRIMARY KEY (`idTransaccion`),
   CONSTRAINT `fk_Transaccion_Compania`
 	FOREIGN KEY (`idCompania`)
     REFERENCES `CentroDeDatos`.`Compania` (`idCompania`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Transaccion_Persona`
-	FOREIGN KEY (`idPersona`)
-    REFERENCES `CentroDeDatos`.`Persona` (`idPersona`)
+  CONSTRAINT `fk_Transaccion_Persona_Tipo`
+	FOREIGN KEY (`idPersona_Tipo`)
+    REFERENCES `CentroDeDatos`.`Persona_Tipo` (`idPersona_Tipo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;    

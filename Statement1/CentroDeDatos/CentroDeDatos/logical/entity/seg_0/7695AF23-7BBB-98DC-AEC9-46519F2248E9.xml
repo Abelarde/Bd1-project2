@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9C0F6A57-47A7-4F62-AA61-F007806F274D" name="Transaccion">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7695AF23-7BBB-98DC-AEC9-46519F2248E9" name="Tipo">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 05:28:29 UTC</createdTime>
+<createdTime>2021-01-02 17:00:50 UTC</createdTime>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <engineerTo>
 <item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idTransaccion" id="920150B9-8B21-E885-B5E5-C9B0E22A4F9D">
+<Attribute name="idTipo" id="DB79BD3A-1A34-FD14-A9E2-3C989D93991E">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 05:28:36 UTC</createdTime>
+<createdTime>2021-01-02 17:00:54 UTC</createdTime>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <engineerTo>
 <item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
@@ -27,46 +27,31 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idCompania" id="C00AACE9-223A-8868-AC42-B2D4485C4DC7">
+<Attribute name="nombre" id="86620A14-AA2D-B093-E64C-3C810AD04965">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:34:49 UTC</createdTime>
-<generatorID>0F29F1F0-8531-F946-7C95-9DB6C57C5C1B</generatorID>
+<createdTime>2021-01-02 17:01:03 UTC</createdTime>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <engineerTo>
 <item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
 </engineerTo>
-<referedAttribute>F0FF4AE0-D418-00E9-3019-B7E94F100628</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="idPersona_Tipo" id="6341F5B9-4B17-712D-5CE2-F4E02C621E92">
-<createdBy>eduardo</createdBy>
-<createdTime>2021-01-02 17:19:54 UTC</createdTime>
-<generatorID>E9D95500-71D1-E241-9CCB-34EF4017EAB2</generatorID>
-<ownerDesignName>CentroDeDatos</ownerDesignName>
-<engineerTo>
-<item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
-</engineerTo>
-<referedAttribute>C6B11081-C2E1-4F1D-FBEB-A5D7E517D74D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="7BA09FE9-F730-F744-B782-3E19D4463236" name="Transaccion PK">
+<identifier id="86D1A2EF-E6D7-CF1A-08F6-04997024D800" name="Tipo PK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 05:28:42 UTC</createdTime>
+<createdTime>2021-01-02 17:01:02 UTC</createdTime>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <engineerTo>
 <item key="87C3B845-8339-BA7B-65E2-F381A957A53F" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>920150B9-8B21-E885-B5E5-C9B0E22A4F9D</attributeRef>
+<attributeRef>DB79BD3A-1A34-FD14-A9E2-3C989D93991E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

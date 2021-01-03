@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E02CCF1-B6DF-4826-8B2F-5805B572F7A6" name="EncuestaPregunta">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>1C7A3EE0-30FC-7B9D-0679-232E41678F28</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Encuesta_idEncuesta" id="EE513892-C67B-1EEC-A5E4-978CE4D77FF4">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>269B6E79-D156-E0F2-9C7D-D859051353CB</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1B63EF1-56E5-92BA-3EE8-3EC85FDED770" referredColumn="D870CE2E-BA53-2D6A-3A73-2A217766AF36"/>
+</associations>
+</Column>
+<Column name="Pregunta_idPregunta" id="997F6B52-F898-20D5-9288-129BA8E8AD42">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>8D7F788E-36DD-A4FA-1644-2098FE3D646D</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38C89637-D2C0-C65E-4029-F1EBD672BA17" referredColumn="E9B0BD3B-100A-4DE1-9C2F-3BF80BEDBEE8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6D73F13-30C9-70B3-E290-A82E6C78A561" name="EncuestaPregunta_Encuesta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>2DDD9221-5EA6-C403-7FC3-A63B99708094</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE513892-C67B-1EEC-A5E4-978CE4D77FF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBDC1404-DF3F-055C-3A41-EF6E816F6721" name="EncuestaPregunta_Pregunta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>5C93E6E9-D412-183F-578B-FDCE846A69A0</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="997F6B52-F898-20D5-9288-129BA8E8AD42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

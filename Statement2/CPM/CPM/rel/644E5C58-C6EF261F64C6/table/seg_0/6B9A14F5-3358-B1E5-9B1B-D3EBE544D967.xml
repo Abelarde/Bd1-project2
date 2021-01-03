@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B9A14F5-3358-B1E5-9B1B-D3EBE544D967" name="Pais">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>9E441A47-266A-FD18-8716-C48DEF4F9AEE</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPais" id="3F152B7D-02D3-916D-4301-6F7197784B24">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>07F88F76-930E-7D66-65F2-1A2B1067BF8D</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="963BD04E-3585-82FD-E93C-5D14A9EA4C3F">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>5485CB23-8461-7B95-2B3C-E15B4130FB40</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area" id="80F02BF4-84C0-93A5-DE67-2478B69753CB">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>15EC270B-534E-0AD7-E0D8-BB4915DC4E65</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poblacion" id="BDD04216-B3CB-FDB6-109A-910563F17E49">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>076BB6D9-708F-BC4F-49F9-3F5ACDDFD271</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_idRegion" id="27F3B1A6-16D9-7AE6-E8F2-3293669C034C">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>4C78527E-FF0B-5E32-2D10-D7F0D5969B58</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED7B936A-D92C-5DF8-8612-74AC05254AC3" referredColumn="AD678322-4BBA-446A-53B8-529E80D20D09"/>
+</associations>
+</Column>
+<Column name="Region_nombre" id="FF1A5200-5112-C9A7-E97C-A8DB83826FA6">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>59140343-2350-CCBF-2AC4-863266F5BF6D</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED7B936A-D92C-5DF8-8612-74AC05254AC3" referredColumn="F21C3D3F-714C-9388-9BA5-74A36BB578A2"/>
+</associations>
+</Column>
+<Column name="Inventor_Inventor_ID" id="3BF57A78-EB3B-B70D-FA77-DA751CFCE870">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EAF9D33-B27C-4A84-648B-225B3557F3DE" referredColumn="DED713B4-1949-053C-80FD-94922736EC5A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="471F100A-69AD-815F-A137-E1695ACEC7EE" name="Pais_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>F425AE3D-F647-D1E3-0010-A3BEAB8315B7</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F152B7D-02D3-916D-4301-6F7197784B24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1925568-BA3E-4DCA-4AF9-3FC17E14EBE9" name="Pais__IDX">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>089524AE-5DFD-C100-6F36-C4E086303BA7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3BF57A78-EB3B-B70D-FA77-DA751CFCE870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF3555AB-5058-8C01-8A43-5E56927B98E0" name="Pais_Region_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>19E343DC-2C3D-5778-3FBB-28273D3E42DB</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27F3B1A6-16D9-7AE6-E8F2-3293669C034C"/>
+<colUsage columnID="FF1A5200-5112-C9A7-E97C-A8DB83826FA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41AEB20E-D603-D279-E153-56D95591CD4A" name="Pais_Inventor_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>089524AE-5DFD-C100-6F36-C4E086303BA7</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BF57A78-EB3B-B70D-FA77-DA751CFCE870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

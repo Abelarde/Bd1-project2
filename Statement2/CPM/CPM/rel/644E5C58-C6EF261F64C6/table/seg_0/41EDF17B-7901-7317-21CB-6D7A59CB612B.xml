@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41EDF17B-7901-7317-21CB-6D7A59CB612B" name="PaisEncuesta">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>EF53DB65-69C1-5916-58A7-A72381680690</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Encuesta_idEncuesta" id="036CC649-9E94-3434-0BFF-B39148BBD5C8">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>E864BBA6-F211-D809-A7D8-97AC28F14387</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E237891-1E2A-4E2A-B5A9-4EB5E7649CF8" referredColumn="D870CE2E-BA53-2D6A-3A73-2A217766AF36"/>
+</associations>
+</Column>
+<Column name="Pais_idPais" id="447F38D7-860D-F4D7-F8FF-8ADF91978FF7">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>364DC86B-A93C-817B-80F1-375C4FD611A0</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="146772AE-5289-65C8-CF85-D96E0CB5179D" referredColumn="3F152B7D-02D3-916D-4301-6F7197784B24"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4340D7ED-03C5-D855-402E-F1230A85BBA0" name="PaisEncuesta_Encuesta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>B7B02D98-90F8-FD2A-399B-EF8E2D00BBF2</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="036CC649-9E94-3434-0BFF-B39148BBD5C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C133223-5C16-5471-00F1-DC8E7587840F" name="PaisEncuesta_Pais_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>5A4A0616-757A-E5F0-A4F2-15B7F3D6F55B</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="447F38D7-860D-F4D7-F8FF-8ADF91978FF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

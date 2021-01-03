@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5A286B03-E259-39AD-B7BC-1EA74BA9F888" containerWithKeyObject="9DD5D210-4FFA-9B9E-EE9C-91D408E8FA12" localFKIndex="451C4826-67C6-CE0F-9609-B618A89568D8" name="Patente_Inventor_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>5E3CA0B6-695B-B3C1-CE3C-6A08A0A3212E</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<referredTableLongName>Inventor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>29CBF4E1-B426-9FAE-AB30-501701BD014F</referredTableID>
+<keyObject>8A37025F-3CA1-F81C-0B0C-324B77818788</keyObject>
+<referredKeyID>8A37025F-3CA1-F81C-0B0C-324B77818788</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Inventor_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

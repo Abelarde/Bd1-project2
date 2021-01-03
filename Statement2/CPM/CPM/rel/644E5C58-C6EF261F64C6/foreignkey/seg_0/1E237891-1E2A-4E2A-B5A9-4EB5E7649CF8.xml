@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1E237891-1E2A-4E2A-B5A9-4EB5E7649CF8" containerWithKeyObject="41EDF17B-7901-7317-21CB-6D7A59CB612B" localFKIndex="4340D7ED-03C5-D855-402E-F1230A85BBA0" name="PaisEncuesta_Encuesta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>B7B02D98-90F8-FD2A-399B-EF8E2D00BBF2</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<referredTableLongName>Encuesta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D9029148-2F2D-72C1-2E53-07FDDC64EA89</referredTableID>
+<keyObject>7670BD7D-AEDD-E8A5-A01C-5CD840D417C5</keyObject>
+<referredKeyID>7670BD7D-AEDD-E8A5-A01C-5CD840D417C5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idEncuesta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

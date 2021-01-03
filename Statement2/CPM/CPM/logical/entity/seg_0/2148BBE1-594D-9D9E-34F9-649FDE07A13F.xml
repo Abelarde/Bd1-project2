@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2148BBE1-594D-9D9E-34F9-649FDE07A13F" name="Patente">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 19:19:59 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idPatente" id="CD784CF3-61DD-C0A5-C0BA-FE55DEEB0187">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 19:20:04 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idInvento" id="F374482B-3F0A-B3E1-8587-482A690711BD">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 19:29:51 UTC</createdTime>
+<generatorID>5AD97CEE-6EAD-2E71-EC99-C6492BF436D1</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<referedAttribute>6F1FB605-936F-88DC-6425-81A2FEA1903F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPais" id="D1524FB5-45D5-6605-8857-C8B12ED0D3BB">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 19:31:26 UTC</createdTime>
+<generatorID>D02B36C8-B66A-4101-A81E-A80D72747926</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<referedAttribute>07F88F76-930E-7D66-65F2-1A2B1067BF8D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C78F047F-E32D-5540-BDD0-3FFBC6495CDF" name="Patente PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 19:20:11 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CD784CF3-61DD-C0A5-C0BA-FE55DEEB0187</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

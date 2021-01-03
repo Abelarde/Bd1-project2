@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9DAD26B-A178-FA5B-58D8-6B0D69C27647" name="PreguntaRespuesta">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>BECF7207-D320-63EE-10DC-7074142CDEC9</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pregunta_idPregunta" id="82B8F2D5-9790-0D06-E00A-6B4C8B53D1DA">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>AB606853-828F-3F6D-F0F2-F748CB71A071</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="932934B8-A66A-84E6-4DD2-6D16DB27EDC8" referredColumn="E9B0BD3B-100A-4DE1-9C2F-3BF80BEDBEE8"/>
+</associations>
+</Column>
+<Column name="Respuesta_idRespuesta" id="7F4E39F8-1972-370A-3A76-C9C3837E0228">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>5ACD7ED3-B26F-B4C3-5448-AD048D07BC69</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4F63B856-A812-092F-DA91-A63CACE7E96B" referredColumn="B48130C9-6457-CF50-9A81-48ED2EBB2BC4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EE11DB4-AAC2-6379-2471-767AA92A28DF" name="PreguntaRespuesta_Pregunta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>0250ED5C-757B-FF6D-1711-BFBB4B64DB14</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82B8F2D5-9790-0D06-E00A-6B4C8B53D1DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7EAA24A-FBF8-C5C4-A99B-6E242321C610" name="PreguntaRespuesta_Respuesta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>0E361847-1C00-689A-7822-06C6D21C8C49</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F4E39F8-1972-370A-3A76-C9C3837E0228"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

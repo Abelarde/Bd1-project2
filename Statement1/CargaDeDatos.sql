@@ -23,8 +23,8 @@ precio_unitario DECIMAL(10,2) NOT NULL
 
 LOAD DATA INFILE '/var/lib/mysql-files/Enunciado1.csv'
 INTO TABLE Temporal
-character set latin1
-fields terminated by ';'
+character set latin1 -- 'utf8' 'utf8mb4'
+fields terminated by ';' -- optionally enclosed by '\''
 lines terminated by '\n'
 ignore 1 lines
 (nombre_compania,contacto_compania,correo_compania,telefono_compania,
@@ -32,6 +32,13 @@ tipo,nombre,correo,telefono,@var1,
 direccion,ciudad,codigo_postal,region,
 producto,categoria_producto,cantidad,precio_unitario)
 set fecha_registro = STR_TO_DATE(@var1, '%d/%m/%Y');
+
+/*
+set nomb_encuesta = nullif(@nomb_encuesta, ''),
+	res_posible = nullif(@res_posible, ''),
+    r1 = nullif(@r1, '')
+    ;
+*/
 
 -- --------------------------------- REGION ----------------------------------------
 INSERT INTO Region(nombre)

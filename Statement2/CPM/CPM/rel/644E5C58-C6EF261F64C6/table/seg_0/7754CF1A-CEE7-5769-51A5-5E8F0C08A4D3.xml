@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7754CF1A-CEE7-5769-51A5-5E8F0C08A4D3" name="PaisFrontera">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>577CA6D1-9705-ED4B-39DF-01E862C2347D</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pais_idPais" id="F1B34D48-91E2-2C00-D2E9-64B82DDAF7C0">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>5C5F08FF-A04D-38BD-40C0-8DDB24F2D1F3</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="329D6FF8-206B-A845-3FB9-111FE50694B3" referredColumn="3F152B7D-02D3-916D-4301-6F7197784B24"/>
+</associations>
+</Column>
+<Column name="Frontera_idFrontera" id="C107B677-7C9B-EF3E-0BB1-38E86465C872">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>2908A53C-94CF-EE1A-F134-218F9DC6F6C7</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48E8376F-1BD6-488C-A6AC-08B0DA74C277" referredColumn="523E9742-BAB9-AE1F-DF18-368EDCE068B8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBBE95CE-AD24-C20A-AC7F-7780172A50C6" name="PaisFrontera_Frontera_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>19193C09-4B97-7F0A-70D0-49B7182CD1BD</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C107B677-7C9B-EF3E-0BB1-38E86465C872"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="048106B6-7990-8210-4CD8-D0565B2876C9" name="PaisFrontera_Pais_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-03 20:33:10 UTC</createdTime>
+<generatorID>3EF4EB54-C5D9-5831-34B7-A85B8086F46B</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1B34D48-91E2-2C00-D2E9-64B82DDAF7C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

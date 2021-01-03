@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="305F30D8-F64E-7AA3-5054-AB13751B1BB7" name="CodigoPostal">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4657B9B-C4F9-2CDF-25F7-D59BB3F9095D" name="CodigoPostal">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>F08DC914-ECAF-E807-1DDE-1A9E53121EBA</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idCodigoPostal" id="A6814174-8BF9-59DD-01A3-95C52E4823B9">
+<Column name="idCodigoPostal" id="7AB9B3E2-FC57-97D1-6055-82BDCBEF5930">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>BD0A4AEC-9B91-8002-6A89-A10257DB1E5A</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="codigo" id="D433ECC2-1F04-8240-28DB-51C9B5CA1EB4">
+<Column name="codigo" id="41A6DBB6-0A19-3421-92D5-B5C3D301CF19">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>9D6407AF-BFCA-780E-3761-AFB0968882FB</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,9 +30,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Ciudad_idCiudad" id="7A29E141-6C37-6B8A-692C-8E768A5E333D">
+<Column name="Ciudad_idCiudad" id="F373134F-8977-51DD-C8B4-5A0501404C5A">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>13FA472E-E374-78C5-AB82-80BFB7D3EAD5</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,12 +42,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="58A7C921-A691-93BD-F6EB-DD7C1EE8F04A" referredColumn="DD0E04FD-72A0-EB66-E25F-211C6D0EF5ED"/>
+<colAssociation fkAssociation="9C140D41-FD39-F1DC-C9D1-6263343D3040" referredColumn="1A641093-028E-85BF-DA02-36C7123A31ED"/>
 </associations>
 </Column>
-<Column name="Direccion_idDireccion" id="9305CD18-6949-69D1-F51E-976CBB380F3C">
+<Column name="Direccion_idDireccion" id="1EB4BD21-47EC-4CFC-67E6-E4E75FECC94B">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>245A68E1-38DE-1F07-5C36-18778B29DE94</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -57,54 +57,54 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="FB4992A9-2075-7AD1-8696-90DAEB212F86" referredColumn="B49B0E56-82D1-5137-D81D-4E15AB21B781"/>
+<colAssociation fkAssociation="46DFDB4B-1710-3DAC-1C68-6128131854A2" referredColumn="4CE6B692-A1FA-CDEE-E681-2E7CBED3730C"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6540C554-DB59-24A6-86D8-B8BDB738A8E5" name="CodigoPostal_PK">
+<ind_PK_UK id="213E1407-2BEE-4F15-60BC-D00A9C8C8E65" name="CodigoPostal_PK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>AEDE3C8A-0EB9-0587-DD3F-FF9D527527F6</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A6814174-8BF9-59DD-01A3-95C52E4823B9"/>
+<colUsage columnID="7AB9B3E2-FC57-97D1-6055-82BDCBEF5930"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="438F198C-7981-7A52-CD17-8238B044D875" name="CodigoPostal__IDX">
+<ind_PK_UK id="0D8B9D8C-B7DC-A73D-6A66-6FED8EFC8087" name="CodigoPostal__IDX">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>DB2B07F6-BEF4-CB7B-2AFB-2ABAEED1DF2D</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="9305CD18-6949-69D1-F51E-976CBB380F3C"/>
+<colUsage columnID="1EB4BD21-47EC-4CFC-67E6-E4E75FECC94B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A2E9A70F-DD71-5473-4182-31DFAB428FF3" name="CodigoPostal_Ciudad_FK">
+<ind_PK_UK id="A2524D06-87A6-980B-A603-6D3F64B6CBEA" name="CodigoPostal_Ciudad_FK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>7A00BC9D-59E7-7BC4-5A4B-EB87FD7C5265</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7A29E141-6C37-6B8A-692C-8E768A5E333D"/>
+<colUsage columnID="F373134F-8977-51DD-C8B4-5A0501404C5A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AAF5B97C-B4C6-2DF3-543B-69F902FCC9BE" name="CodigoPostal_Direccion_FK">
+<ind_PK_UK id="32DEB11A-0798-3863-8E6E-2F1D5D2B3F8E" name="CodigoPostal_Direccion_FK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>DB2B07F6-BEF4-CB7B-2AFB-2ABAEED1DF2D</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9305CD18-6949-69D1-F51E-976CBB380F3C"/>
+<colUsage columnID="1EB4BD21-47EC-4CFC-67E6-E4E75FECC94B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

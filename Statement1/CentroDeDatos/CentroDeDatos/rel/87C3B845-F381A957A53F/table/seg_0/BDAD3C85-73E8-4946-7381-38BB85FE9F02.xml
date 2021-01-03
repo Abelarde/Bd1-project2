@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39FEE0F4-7510-F41F-29F5-77D49B917CFF" name="Producto">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDAD3C85-73E8-4946-7381-38BB85FE9F02" name="Producto">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>B4C6BFD9-3D7E-D98C-0BFA-3996C56AFD8F</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idProducto" id="4E2A2EE2-FD16-B56F-8DF1-A8B971B56FC8">
+<Column name="idProducto" id="EA379322-A66D-E879-A96C-BAE04D7459AF">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>5CC6A934-7F39-891C-10DD-2E64BB3645D9</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombre" id="C597D882-47E4-23A9-8B8A-0AA69C153E68">
+<Column name="nombre" id="7B4FD606-9C4C-AD96-7A0C-1C740D227264">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>207CCEBC-3385-5D01-043E-37AADB99AA65</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="precio" id="B0037776-8789-A60E-834E-56B6F5CA2A35">
+<Column name="precio" id="22E94458-E350-D9EE-0464-ABED6ADC7F7B">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>10DAFC17-8BFB-407A-DBCC-99B32C9E4E46</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,9 +44,9 @@
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CategoriaProducto_idCategoriaProducto" id="92799BA7-0297-2EF4-5E4B-AFB7BFB2DEB6">
+<Column name="CategoriaProducto_idCategoriaProducto" id="998CBBF5-1468-4E9D-90C6-622B817AB0CC">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>A07652A2-71FE-9780-20BA-8468A72AFFA6</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,32 +56,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A8908A5E-5843-053A-4FB8-FCFF716A2AD8" referredColumn="65701B70-6DE6-3DE3-57CD-CD48C7EFD522"/>
+<colAssociation fkAssociation="C8031CA6-E920-5969-7FBE-02F756A3F644" referredColumn="997B911A-6A48-8309-1A46-23162FC246F9"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5F2427EB-D354-152A-682B-674FFC015D4B" name="Producto_PK">
+<ind_PK_UK id="D407FFF0-6F65-7AD2-1FF0-57635879D36B" name="Producto_PK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>A4C73CF4-D2FA-3BEC-E9C7-C96908C25239</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4E2A2EE2-FD16-B56F-8DF1-A8B971B56FC8"/>
+<colUsage columnID="EA379322-A66D-E879-A96C-BAE04D7459AF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8B898022-E04C-32E6-15C1-C43CF5AC2900" name="Producto_CategoriaProducto_FK">
+<ind_PK_UK id="966CAC84-B9AF-71A1-3290-97E65A60A1D6" name="Producto_CategoriaProducto_FK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>74A75319-5E08-3A98-04EA-0E727BA3ECB5</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="92799BA7-0297-2EF4-5E4B-AFB7BFB2DEB6"/>
+<colUsage columnID="998CBBF5-1468-4E9D-90C6-622B817AB0CC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

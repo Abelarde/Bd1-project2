@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="448306FB-65FD-F29A-A53D-2475BEC1A941" name="CategoriaProducto">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="336772B9-3C5D-1312-59A3-D78EBACCF66C" name="Tipo">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
-<generatorID>94630E58-BE3B-96D8-6C54-4FFF62D72B3B</generatorID>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>7695AF23-7BBB-98DC-AEC9-46519F2248E9</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idCategoriaProducto" id="65701B70-6DE6-3DE3-57CD-CD48C7EFD522">
+<Column name="idTipo" id="558852AC-7F13-939F-737F-C2B9AD7A1120">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
-<generatorID>1D890196-CA4B-E72D-6461-D8E52D794BD6</generatorID>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>DB79BD3A-1A34-FD14-A9E2-3C989D93991E</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,10 +19,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombre" id="E041295E-C4A3-DA29-24AD-4BACD0338B46">
+<Column name="nombre" id="DE663C19-2382-8350-7713-7350A3D09AF2">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
-<generatorID>321B33FC-B6FF-FD45-7D95-EBA1DB3B44E2</generatorID>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>86620A14-AA2D-B093-E64C-3C810AD04965</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,16 +33,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5BD063F5-AE14-0759-6FA5-5028908483E4" name="CategoriaProducto_PK">
+<ind_PK_UK id="33DFE160-6CEC-C3C7-AB6D-EE11CEA908BF" name="Tipo_PK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
-<generatorID>C4EBA9FC-9FED-6BBD-5A78-89D962FD42D5</generatorID>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>86D1A2EF-E6D7-CF1A-08F6-04997024D800</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="65701B70-6DE6-3DE3-57CD-CD48C7EFD522"/>
+<colUsage columnID="558852AC-7F13-939F-737F-C2B9AD7A1120"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

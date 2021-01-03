@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69541434-A918-135B-1F0A-9FE4C9C882A0" name="Compania">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E37843B-52D5-690A-6B39-23333005D5BE" name="Compania">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>D9D6F5A2-B7F9-5B06-D6EB-74A6E9BBD963</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idCompania" id="A8FAE0D6-9CAB-814A-9FAD-BB0720B703FD">
+<Column name="idCompania" id="D6B60160-CAD9-723C-EBE8-6D3A2BBB9880">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>F0FF4AE0-D418-00E9-3019-B7E94F100628</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombre" id="968C1A7E-F812-190D-BDB7-3658E4BD60E6">
+<Column name="nombre" id="B8647557-63CD-51F2-48DB-680ECB1B9727">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>D9753ACA-8B2F-936B-4B94-282445D17C4B</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="contacto" id="3174537F-CF1F-1ABC-230E-FD044B270942">
+<Column name="contacto" id="F8DA1ADA-A02F-71F4-1ACA-7218F55EED98">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>5B128499-A803-CD7C-A717-4B3269F36F2A</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -44,9 +44,9 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="correo" id="D76975C0-3374-DC9D-0628-52CACE62CD50">
+<Column name="correo" id="2FDF18DD-7A72-7569-D154-EBA5CE0C5672">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>5137DAAA-A789-D460-921B-C1FDA4C015A4</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -57,9 +57,9 @@
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="telefono" id="68A23EC6-09DC-1BE7-56D5-B626B161274C">
+<Column name="telefono" id="22EFAF91-35A8-5311-6101-1607E79A1F8E">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>A2FEE43A-5648-7290-CE8B-FF93FB1D0C9E</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -72,16 +72,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E23ECA01-B161-0C5E-A78D-A8961FB96634" name="Compania_PK">
+<ind_PK_UK id="C090ED3E-6AC1-1F68-1B40-54ED55AC8C19" name="Compania_PK">
 <createdBy>eduardo</createdBy>
-<createdTime>2020-12-28 06:46:15 UTC</createdTime>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
 <generatorID>70FFA090-E207-09D5-E040-256FF3A07B95</generatorID>
 <ownerDesignName>CentroDeDatos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A8FAE0D6-9CAB-814A-9FAD-BB0720B703FD"/>
+<colUsage columnID="D6B60160-CAD9-723C-EBE8-6D3A2BBB9880"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

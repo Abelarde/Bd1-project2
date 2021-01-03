@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19C0FF54-7113-8E85-5E72-342842419ADC" name="Persona_Tipo">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>2C1B1938-FDB4-8CF6-F89A-0B5261800F17</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPersona_Tipo" id="3F3B809B-A402-F119-5326-F1507043B82C">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>C6B11081-C2E1-4F1D-FBEB-A5D7E517D74D</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_idPersona" id="1FA4AF82-A774-B750-84EE-AA75826834D6">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>4723D33C-4F9F-1E86-7786-39AAB12DE90C</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E40B1936-D657-5138-943D-1277B1578612" referredColumn="BABAE808-8119-9915-FA25-74288CC9983E"/>
+</associations>
+</Column>
+<Column name="Tipo_idTipo" id="AB804B17-4EA5-AAD9-1503-AAF0EC02130A">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>9DE9BFB0-D550-C63A-2764-B8816A2B68AC</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B027C03A-24BF-604B-D963-A6856805DB8B" referredColumn="558852AC-7F13-939F-737F-C2B9AD7A1120"/>
+</associations>
+</Column>
+<Column name="fechaRegistro" id="69499655-1A35-2BC2-55AD-6E72B41981D0">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>C44CCAB1-5417-318C-C313-BF7FBA304E9E</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion_idDireccion" id="BE90D259-3ADC-32E8-EF27-0E1150EE5034">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>B45FC1E4-48B4-C3F7-76C8-01781C283FC0</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACB9103A-CFC8-1FD2-9C1D-236541F05050" referredColumn="4CE6B692-A1FA-CDEE-E681-2E7CBED3730C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDCF4092-9749-93F4-E6E9-8D264D5D0E5E" name="Persona_Tipo_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>C35DF0D7-416D-70EB-5D9F-16EC4D580A98</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F3B809B-A402-F119-5326-F1507043B82C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8FDB4C8-4481-C05F-0A60-577FEF4EDB12" name="Persona_Tipo_Persona_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>7051EC92-DA8A-2235-BA1B-3858967FBA16</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FA4AF82-A774-B750-84EE-AA75826834D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3B9ACA9-1328-0B3C-9368-F0814A9EF130" name="Persona_Tipo_Tipo_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>6D9D74DB-243F-A8DF-B93A-80215C0C3D81</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB804B17-4EA5-AAD9-1503-AAF0EC02130A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E69C89A-C8D6-FD54-1031-CF1B774C1FBC" name="Persona_Tipo_Direccion_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-02 17:32:59 UTC</createdTime>
+<generatorID>A4F3F6E8-2E08-F163-47B7-90E99974CAE1</generatorID>
+<ownerDesignName>CentroDeDatos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE90D259-3ADC-32E8-EF27-0E1150EE5034"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,11 +1,6 @@
--- -----------------------------------------------------
--- Schema CentroDeDatos
--- -----------------------------------------------------
+
 DROP SCHEMA IF EXISTS `CentroDeDatos` ;
 
--- -----------------------------------------------------
--- Schema CentroDeDatos
--- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `CentroDeDatos` ;
 USE `CentroDeDatos` ;
 

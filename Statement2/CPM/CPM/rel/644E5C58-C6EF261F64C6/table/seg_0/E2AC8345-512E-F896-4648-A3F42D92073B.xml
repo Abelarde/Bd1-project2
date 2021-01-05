@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2AC8345-512E-F896-4648-A3F42D92073B" name="AreaInvestigacion">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>1BA6958F-E983-B855-0051-DBF6EFE9ABB6</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idAreaInvestigacion" id="A41E9300-443A-3260-22F4-A3C32EC21A9B">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>D5874CE1-34E6-F943-D859-EB8C6BA0869F</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C8409006-713A-FF76-D533-664457800627">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>7199BDCA-FB40-856B-06E0-59C37A084B78</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ranking" id="FCD8632B-4CD3-905F-4559-3FAF69F8229B">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>16193C2D-7FC3-B9E7-161D-A93874CC7D08</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Profesional_idProfesional" id="5FD37E60-7363-CC8F-ADBF-565FEA84BC1E">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>C2182A84-540D-1544-F2B9-AC67EB520A16</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CD70CAC-1848-9C33-932E-CF5EED0640CB" referredColumn="EA06512B-5699-E68A-3F91-13ADB8F5A044"/>
+</associations>
+</Column>
+<Column name="Profesional_idProfesional1" id="8200AE3B-8A22-8161-2751-62064458480F">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>2894B898-E834-1329-21A1-4371FEF3201E</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D197730-863A-EA5E-4670-D61B4D1474FA" referredColumn="EA06512B-5699-E68A-3F91-13ADB8F5A044"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15707F45-E199-F995-208F-B516A1EE707C" name="AreaInvestigacion_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>365D6444-36A0-64D8-B3A2-599D0628EDB4</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A41E9300-443A-3260-22F4-A3C32EC21A9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94795683-D012-0E82-381C-F456A14E7427" name="AreaInvestigacion__IDX">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3C7ACE7D-5F0D-BEB2-D941-3BF7185C655C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5FD37E60-7363-CC8F-ADBF-565FEA84BC1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7788B642-0411-8981-1028-D0D7405CBCC7" name="AreaInvestigacion__IDXv1">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>75668700-8B8A-E3EF-B076-11552E3606DF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8200AE3B-8A22-8161-2751-62064458480F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36BE4997-B339-AB0D-6BBE-9CCF358BB52D" name="AreaInvestigacion_Profesional_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>3C7ACE7D-5F0D-BEB2-D941-3BF7185C655C</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FD37E60-7363-CC8F-ADBF-565FEA84BC1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06588159-272A-2AAC-59F2-0ADE4CA8EE41" name="AreaInvestigacion_Profesional_FKv2">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>75668700-8B8A-E3EF-B076-11552E3606DF</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8200AE3B-8A22-8161-2751-62064458480F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

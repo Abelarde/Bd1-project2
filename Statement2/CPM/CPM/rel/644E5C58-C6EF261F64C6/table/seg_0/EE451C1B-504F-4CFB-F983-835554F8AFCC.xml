@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE451C1B-504F-4CFB-F983-835554F8AFCC" name="EncuestaPregunta">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>1C7A3EE0-30FC-7B9D-0679-232E41678F28</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Encuesta_idEncuesta" id="BE2E1C50-7C46-6040-572C-7A0F05841ED5">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>269B6E79-D156-E0F2-9C7D-D859051353CB</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50FBB4A5-15B9-F7F4-F134-B70D5ED0B7F5" referredColumn="9743C32A-3C5E-61D4-B39A-572F8336AAED"/>
+</associations>
+</Column>
+<Column name="Pregunta_idPregunta" id="85750726-A913-08F7-DD16-B0D87994EA84">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>8D7F788E-36DD-A4FA-1644-2098FE3D646D</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5ADC5306-A0C6-5720-265E-D488F0B7EFB9" referredColumn="DD6EDA1E-6991-6A38-F807-775913A74632"/>
+</associations>
+</Column>
+<Column name="Respuesta_idRespuesta" id="13569DD2-1DF7-2BFC-AF9A-221660CFF329">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>EF454BFC-0114-4A7B-72D0-CD5352D1E396</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AC40F17-7D64-580A-B33C-FF5F6D707B08" referredColumn="DB76C2B7-71B4-FA15-1ECA-D6ADB3453563"/>
+</associations>
+</Column>
+<Column name="Pais_idPais" id="365BD828-67EB-FFA4-958D-21D92165DEB4">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>A1CB418F-9DE8-12A6-59F9-9DB6156DEFB5</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98ABA3AE-4B5D-5CEC-43F2-3203B3F58A2B" referredColumn="3FD3AADB-6275-C123-2249-FC6352C07F6D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4871154C-B8CC-AF72-A02E-DDB46737668B" name="EncuestaPregunta_Encuesta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>2DDD9221-5EA6-C403-7FC3-A63B99708094</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE2E1C50-7C46-6040-572C-7A0F05841ED5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4264E509-702D-CAE9-890D-680FB2CC6606" name="EncuestaPregunta_Pregunta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>5C93E6E9-D412-183F-578B-FDCE846A69A0</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85750726-A913-08F7-DD16-B0D87994EA84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABB18EE3-875E-520E-DA58-6F4897921276" name="EncuestaPregunta_Respuesta_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>8E18AB6B-D0E7-931F-BBC7-A4C69882A12C</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13569DD2-1DF7-2BFC-AF9A-221660CFF329"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="945ED4E1-01AD-D26B-DDAD-E0E0B797FDC2" name="EncuestaPregunta_Pais_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>7BB883D8-5865-D31B-5213-0C0281294109</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="365BD828-67EB-FFA4-958D-21D92165DEB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -265,9 +265,46 @@ GROUP BY Comodin1.CI) AS ComodinB
 ON ComodinA.CIID = ComodinB.CI;
 
 
-
 -- ---------------------------- CONSULTA 10 -----------------------------------
 /*Mostrar los clientes que hayan consumido más que el promedio que consume 
 la ciudad de Frankfort.*/ 
+-- ComodinA.idTransaccion,
+-- no me dice si de dinero, cantidad de productos, para Clientes y para Frankfort
+
+SELECT ComodinC.cliente, ComodinC.promedioCliente, ComodinB.promedioFrankfort
+FROM
+(SELECT Persona.nombre as cliente, AVG(ComodinA.totalProductos) promedioCliente
+FROM
+(SELECT DetalleTransaccion.idTransaccion AS idTransaccion, SUM(DetalleTransaccion.cantidad) AS totalProductos
+FROM DetalleTransaccion
+GROUP BY DetalleTransaccion.idTransaccion) AS ComodinA
+INNER JOIN Transaccion
+ON ComodinA.idTransaccion = Transaccion.idTransaccion
+INNER JOIN Persona_Tipo 
+ON Transaccion.idPersona_Tipo = Persona_Tipo.idPersona_Tipo
+INNER JOIN Persona 
+ON Persona_Tipo.idPersona = Persona.idPersona
+WHERE Persona_Tipo.idTipo = 1
+GROUP BY cliente) AS ComodinC,
+
+(SELECT AVG(ComodinA.totalProductos) promedioFrankfort, Ciudad.nombre AS nombreFrankfort
+FROM
+(SELECT DetalleTransaccion.idTransaccion AS idTransaccion, SUM(DetalleTransaccion.cantidad) AS totalProductos
+FROM DetalleTransaccion
+GROUP BY DetalleTransaccion.idTransaccion) AS ComodinA
+INNER JOIN Transaccion
+ON ComodinA.idTransaccion = Transaccion.idTransaccion
+INNER JOIN Persona_Tipo 
+ON Transaccion.idPersona_Tipo = Persona_Tipo.idPersona_Tipo
+INNER JOIN Direccion
+ON Persona_Tipo.idDireccion = Direccion.idDireccion
+INNER JOIN CodigoPostal
+ON Direccion.idDireccion = CodigoPostal.idDireccion
+INNER JOIN Ciudad
+ON CodigoPostal.idCiudad = Ciudad.idCiudad
+WHERE Persona_Tipo.idTipo = 1 AND Ciudad.nombre = 'Frankfort'
+GROUP BY nombreFrankfort) AS ComodinB
+WHERE ComodinC.promedioCliente > ComodinB.promedioFrankfort;
+
 
 

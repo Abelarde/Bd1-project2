@@ -54,6 +54,19 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="anio" id="A9CF11D3-AA8C-4902-C290-BE4A3DD26DB2">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:23:30 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="491BF260-BAE3-98E4-D21A-EB6288F20465" name="Invento PK">

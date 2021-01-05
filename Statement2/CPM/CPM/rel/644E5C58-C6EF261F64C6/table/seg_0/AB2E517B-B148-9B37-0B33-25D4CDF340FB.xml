@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB2E517B-B148-9B37-0B33-25D4CDF340FB" name="Patente">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>2148BBE1-594D-9D9E-34F9-649FDE07A13F</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPatente" id="B84C1B31-FB08-2F85-C5C0-CE0AACC3FFBF">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>CD784CF3-61DD-C0A5-C0BA-FE55DEEB0187</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Invento_idInvento" id="92B792A1-6663-EA5A-88EC-4D845F8FBB31">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>F374482B-3F0A-B3E1-8587-482A690711BD</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E17C0D6-93A4-FAC4-CA5D-09B83B796146" referredColumn="1EE94273-D0C7-A408-3BE2-2723E9C6C0A0"/>
+</associations>
+</Column>
+<Column name="Pais_idPais" id="ED48C5AE-5C49-220B-EB2E-86F1D853721C">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>D1524FB5-45D5-6605-8857-C8B12ED0D3BB</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CDC0BAB-A28B-4649-63B3-50ED69DC7205" referredColumn="3FD3AADB-6275-C123-2249-FC6352C07F6D"/>
+</associations>
+</Column>
+<Column name="Inventor_Inventor_ID" id="0CB5E0F6-6EF8-5014-F9F7-C027E7893E8D">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96F7345F-54E9-8BBC-E001-B1B67FD1998F" referredColumn="16D093E0-EA6A-F9FF-CBA4-F3D795DC17AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A68B7A02-CEFF-DC49-58B4-2E9B0429D978" name="Patente_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>C78F047F-E32D-5540-BDD0-3FFBC6495CDF</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B84C1B31-FB08-2F85-C5C0-CE0AACC3FFBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE9FE89A-B99A-816F-0D56-C51BAD91699B" name="Patente_Inventor_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>5E3CA0B6-695B-B3C1-CE3C-6A08A0A3212E</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CB5E0F6-6EF8-5014-F9F7-C027E7893E8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15656CC9-87B2-20E6-551D-C18D7F78CDFE" name="Patente_Invento_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>5AD97CEE-6EAD-2E71-EC99-C6492BF436D1</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92B792A1-6663-EA5A-88EC-4D845F8FBB31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3194C1A5-AE59-3910-9832-D77BA1BE2C33" name="Patente_Pais_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>D02B36C8-B66A-4101-A81E-A80D72747926</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED48C5AE-5C49-220B-EB2E-86F1D853721C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

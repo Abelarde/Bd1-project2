@@ -255,39 +255,22 @@ WHERE ComodinA.pais IS NOT NULL;
 
 
 -- --------------------------------- FRONTERA ----------------------------------------
-INSERT INTO Frontera(Pais_idPaisPrincipal, Pais_idPaisSecundario)
-SELECT ComodinA.idPaisPrincipal, Pais.idPais
+INSERT INTO Frontera(Pais_idPaisPrincipal, Pais_idPaisSecundario, norte, sur, este, oeste)
+SELECT ComodinA.idPaisPrincipal, Pais.idPais,
+ComodinA.N, ComodinA.S, ComodinA.E, ComodinA.O
 FROM
-(SELECT DISTINCT Pais.nombre, Pais.idPais AS idPaisPrincipal, TemporalUno.FRONTERA_CON AS nombreSec
+(SELECT DISTINCT Pais.nombre AS nombrePrincipal, Pais.idPais AS idPaisPrincipal, TemporalUno.FRONTERA_CON AS nombreSec,
+TemporalUno.NORTE AS N, TemporalUno.SUR AS S, TemporalUno.ESTE AS E, TemporalUno.OESTE AS O
 FROM Pais
 INNER JOIN TemporalUno
 ON Pais.nombre = TemporalUno.PAIS_DEL_INVENTOR) AS ComodinA
 LEFT JOIN Pais
 ON ComodinA.nombreSec = Pais.nombre;
 
--- select distinct FRONTERA_CON 
--- from TemporalUno;
--- select * from Pais;
-
-
--- --------------------------------- COORDENADA ----------------------------------------
-INSERT INTO Coordenada(nombre)
-VALUES('NORTE');
-INSERT INTO Coordenada(nombre)
-VALUES('SUR');
-INSERT INTO Coordenada(nombre)
-VALUES('ESTE');
-INSERT INTO Coordenada(nombre)
-VALUES('OESTE');
-
 /*
--- --------------------------------- FRONTERA_COORDENADA ----------------------------------------
-INSERT INTO FronteraCoordenada(Coordenada_idCoordenada, Frontera_idFrontera)
-SELECT ComodinA.nombrePrincipal, ComodinA.idPaisPrincipal, ComodinA.nombreSec, Pais.idPais,
-ComodinA.N, ComodinA.S, ComodinA.E, ComodinA.O
+SELECT ComodinA.idPaisPrincipal, Pais.idPais
 FROM
-(SELECT DISTINCT Pais.nombre AS nombrePrincipal, Pais.idPais AS idPaisPrincipal, TemporalUno.FRONTERA_CON AS nombreSec,
-TemporalUno.NORTE AS N, TemporalUno.SUR AS S, TemporalUno.ESTE AS E, TemporalUno.OESTE AS O
+(SELECT DISTINCT Pais.nombre, Pais.idPais AS idPaisPrincipal, TemporalUno.FRONTERA_CON AS nombreSec
 FROM Pais
 INNER JOIN TemporalUno
 ON Pais.nombre = TemporalUno.PAIS_DEL_INVENTOR) AS ComodinA
@@ -315,7 +298,7 @@ INNER JOIN Pais
 ON TemporalUno.PAIS_DEL_INVENTO = Pais.nombre
 WHERE INVENTO IS NOT NULL;
 
-
+/*
 -- --------------------------------- ENCUESTA_PREGUNTA ----------------------------------------
 INSERT INTO EncuestaPregunta(Encuesta_idEncuesta, Pregunta_idPregunta, Respuesta_idRespuestaPais,
 Pais_idPais)
@@ -329,7 +312,7 @@ INNER JOIN Respuesta
 ON TemporalDos.RESPUESTA_PAIS = Respuesta.nombre
 INNER JOIN Pais
 ON TemporalDos.PAIS = Pais.nombre;
-
+*/
 
 
 

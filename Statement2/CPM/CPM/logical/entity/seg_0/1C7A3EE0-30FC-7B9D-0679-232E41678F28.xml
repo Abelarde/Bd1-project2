@@ -43,5 +43,33 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="idRespuesta" id="EF454BFC-0114-4A7B-72D0-CD5352D1E396">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:16:58 UTC</createdTime>
+<generatorID>8E18AB6B-D0E7-931F-BBC7-A4C69882A12C</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<referedAttribute>D75D3F34-9226-6653-6B5F-6DB679132C39</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPais" id="A1CB418F-9DE8-12A6-59F9-9DB6156DEFB5">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:19:17 UTC</createdTime>
+<generatorID>7BB883D8-5865-D31B-5213-0C0281294109</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<referedAttribute>07F88F76-930E-7D66-65F2-1A2B1067BF8D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 </Entity>

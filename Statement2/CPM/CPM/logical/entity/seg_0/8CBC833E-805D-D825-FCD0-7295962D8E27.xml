@@ -45,9 +45,51 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="coordenada" id="D60A6BFE-7182-4F22-6549-5BC55046B3BF">
+<Attribute name="norte" id="D60A6BFE-7182-4F22-6549-5BC55046B3BF">
 <createdBy>eduardo</createdBy>
 <createdTime>2021-01-03 21:01:49 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sur" id="1D6BCCB8-9568-D4EF-C782-EB546D28C3D4">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:24:36 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="este" id="1AFAE5CD-AE20-1D7D-05E0-CD5B37A7DFDB">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:24:45 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oeste" id="73F54FC9-723C-9FF4-E947-D3E36105CDAC">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:24:52 UTC</createdTime>
 <ownerDesignName>CPM</ownerDesignName>
 <engineerTo>
 <item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>

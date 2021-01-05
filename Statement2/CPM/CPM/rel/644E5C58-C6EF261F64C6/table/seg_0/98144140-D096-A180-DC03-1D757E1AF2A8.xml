@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98144140-D096-A180-DC03-1D757E1AF2A8" name="Invento">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>6BF53B37-5163-7518-6C02-EB3CA8299F87</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idInvento" id="1EE94273-D0C7-A408-3BE2-2723E9C6C0A0">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>6F1FB605-936F-88DC-6425-81A2FEA1903F</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1F3504C0-F2F3-E496-020C-6303FAC63C0B">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>ACB1F183-A3B7-D6F8-910F-B488BB2F8088</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Profesional_idProfesional" id="F2A4FC81-1B51-1E37-08BC-87E4156F0883">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>60EB18F7-FB9A-0FD8-2E83-A0E772C15B27</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB0742B4-4189-DC5F-90C2-2594EB3F57C7" referredColumn="EA06512B-5699-E68A-3F91-13ADB8F5A044"/>
+</associations>
+</Column>
+<Column name="anio" id="8CB6678F-6AA9-B4FC-2A9A-E9EBFDE0C58E">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>A9CF11D3-AA8C-4902-C290-BE4A3DD26DB2</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAD370B4-0CC2-5DB6-EB1C-B7BCCFF7541A" name="Invento_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>491BF260-BAE3-98E4-D21A-EB6288F20465</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EE94273-D0C7-A408-3BE2-2723E9C6C0A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE0AB6F0-6B33-F671-B6C9-A5D16C82682F" name="Invento_Profesional_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>52B96B03-D30B-B32D-C5DC-FB5484E7B9E4</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2A4FC81-1B51-1E37-08BC-87E4156F0883"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

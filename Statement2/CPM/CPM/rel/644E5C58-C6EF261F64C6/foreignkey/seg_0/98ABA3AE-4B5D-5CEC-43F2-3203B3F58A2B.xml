@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="98ABA3AE-4B5D-5CEC-43F2-3203B3F58A2B" containerWithKeyObject="EE451C1B-504F-4CFB-F983-835554F8AFCC" localFKIndex="945ED4E1-01AD-D26B-DDAD-E0E0B797FDC2" name="EncuestaPregunta_Pais_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>7BB883D8-5865-D31B-5213-0C0281294109</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<referredTableLongName>Pais</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E840AAA9-0D16-BE6D-FCDB-AFEA838E5707</referredTableID>
+<keyObject>37DC9DE9-A8C5-BCEF-F492-B61CA258106C</keyObject>
+<referredKeyID>37DC9DE9-A8C5-BCEF-F492-B61CA258106C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idPais</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

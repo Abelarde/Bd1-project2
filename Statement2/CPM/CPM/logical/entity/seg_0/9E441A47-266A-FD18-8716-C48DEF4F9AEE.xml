@@ -93,6 +93,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="capital" id="42E9B29E-B293-49DE-1DB2-8BE86D8A0629">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:24:03 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<engineerTo>
+<item key="644E5C58-24A1-EBBB-5392-C6EF261F64C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

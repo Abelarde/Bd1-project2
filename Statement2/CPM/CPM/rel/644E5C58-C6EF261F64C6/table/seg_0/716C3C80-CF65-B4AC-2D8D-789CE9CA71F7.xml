@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="716C3C80-CF65-B4AC-2D8D-789CE9CA71F7" name="Profesional">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>670CE3CB-CBA1-18AE-F22A-275C4851E6D3</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idProfesional" id="EA06512B-5699-E68A-3F91-13ADB8F5A044">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>64FC1CFD-E936-8357-E218-2D6781B8B1E7</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salario" id="03D0CCEE-8C3C-3347-5E8A-59B071A2AD4E">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>E9450712-2846-DA76-2B9F-D0FB85F119D9</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comision" id="B446D4EC-04CF-D6EB-421F-D57213EEA576">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>0F22CB5B-CF18-C7BC-10FE-04E36F2F3A0E</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaInicioFunciones" id="5FC77B74-89B1-C811-618F-3CF2A721B5ED">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>DE9F2513-5290-B81E-979A-D4C77238AF74</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AreaInvestigacion_idAreaInvestigacion" id="D09557F6-06FD-CB4F-C3D5-0073D3068792">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>102AED3E-7518-F893-1142-77F26FF5D605</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14290E33-F5DC-6784-EB73-A3775FC77E32" referredColumn="A41E9300-443A-3260-22F4-A3C32EC21A9B"/>
+</associations>
+</Column>
+<Column name="AreaInvestigacion_idAreaInvestigacion1" id="C676892B-489D-4E06-1DB8-D28A797455E9">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>D1FE1B11-4511-76E8-3C00-77753B07F305</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBBC2C54-39BA-CA81-F5DE-9CF254C805E6" referredColumn="A41E9300-443A-3260-22F4-A3C32EC21A9B"/>
+</associations>
+</Column>
+<Column name="nombre" id="AACCDDED-207F-0C8F-A52B-AC2BBFEAE1B3">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>67C87408-3E9F-9FB3-9F1A-9DD5756D7FDE</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0E28D02-8798-6A72-BD21-02D7167694B6" name="Profesional_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>CFDE28C3-7230-FC2A-D7A6-05B156027226</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA06512B-5699-E68A-3F91-13ADB8F5A044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8478E66D-7424-E47E-DAB0-95B0375FED67" name="Profesional__IDX">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3C7ACE7D-5F0D-BEB2-D941-3BF7185C655C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D09557F6-06FD-CB4F-C3D5-0073D3068792"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11985AB6-E31B-F0C8-F15E-B11E07F33905" name="Profesional__IDXv1">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>75668700-8B8A-E3EF-B076-11552E3606DF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C676892B-489D-4E06-1DB8-D28A797455E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E406305-77B3-8181-9E9B-8CEE817788B3" name="Profesional_AreaInvestigacion_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>3C7ACE7D-5F0D-BEB2-D941-3BF7185C655C</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D09557F6-06FD-CB4F-C3D5-0073D3068792"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E6BA13C-FF9C-D7F6-EABD-F91697D9E793" name="Profesional_AreaInvestigacion_FKv2">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>75668700-8B8A-E3EF-B076-11552E3606DF</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C676892B-489D-4E06-1DB8-D28A797455E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

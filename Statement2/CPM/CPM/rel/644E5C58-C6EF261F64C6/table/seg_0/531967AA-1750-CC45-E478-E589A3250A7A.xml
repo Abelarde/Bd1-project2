@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="531967AA-1750-CC45-E478-E589A3250A7A" name="Region">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>287C9182-F3A6-055F-3B11-21AC09DEA1A3</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idRegion" id="ADEBAFA1-6D71-6795-4B02-50E06EFF2EC9">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>951B55C7-881E-AA95-E0B4-DD4286972B30</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="8A5EFE77-624A-4DA3-5064-0442A0A9397D">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>227779D6-EBB2-BDD8-723E-2297762BADBC</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region_idRegion" id="8E1882B2-0AD3-F2C6-0F0A-CCE1A9662572">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>477A1E05-9EC3-4D2A-C454-FF3FE3E980F8</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEE25EE1-2183-30B2-D841-F228F19BE308" referredColumn="ADEBAFA1-6D71-6795-4B02-50E06EFF2EC9"/>
+</associations>
+</Column>
+<Column name="Region_nombre" id="D0931C44-E0D2-3C71-2C33-232B69AE9212">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>54A84B14-1397-64EC-6ED5-2E89CA2AB453</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEE25EE1-2183-30B2-D841-F228F19BE308" referredColumn="8A5EFE77-624A-4DA3-5064-0442A0A9397D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA721A2D-8E1A-1DC2-23FD-7C6185744179" name="Region_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>69744E29-4707-FEDD-51CF-FD46991A6CF0</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADEBAFA1-6D71-6795-4B02-50E06EFF2EC9"/>
+<colUsage columnID="8A5EFE77-624A-4DA3-5064-0442A0A9397D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="299EE90B-E7F0-CBC7-7E0D-74604497D7B7" name="Region_Region_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2021-01-05 22:26:26 UTC</createdTime>
+<generatorID>294AFE51-8944-BB4C-F0DA-6D6CD0945B5E</generatorID>
+<ownerDesignName>CPM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E1882B2-0AD3-F2C6-0F0A-CCE1A9662572"/>
+<colUsage columnID="D0931C44-E0D2-3C71-2C33-232B69AE9212"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

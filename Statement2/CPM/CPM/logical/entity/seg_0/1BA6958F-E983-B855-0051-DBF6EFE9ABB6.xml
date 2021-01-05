@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="7199BDCA-FB40-856B-06E0-59C37A084B78">
+<Attribute name="nombre" id="7199BDCA-FB40-856B-06E0-59C37A084B78">
 <createdBy>eduardo</createdBy>
 <createdTime>2021-01-03 19:51:27 UTC</createdTime>
 <ownerDesignName>CPM</ownerDesignName>

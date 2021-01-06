@@ -270,6 +270,7 @@ ON ComodinA.CIID = ComodinB.CI;
 la ciudad de Frankfort.*/ 
 -- ComodinA.idTransaccion,
 -- no me dice si de dinero, cantidad de productos, para Clientes y para Frankfort
+-- asi que para los dos esta respecto al promedio de ambos
 
 SELECT ComodinC.cliente, ComodinC.promedioCliente, ComodinB.promedioFrankfort
 FROM
